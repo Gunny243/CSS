@@ -7,11 +7,11 @@
           .item1, .item2, .item3{
               background-color: rgb(127, 255, 200);
               border: 2px solid red;
-              width: 20%;
+              /*width: 20%;*/
           }
           .main{
               display: flex;
-              /*height: 430px;*/
+              /*height: 600px;*/
 
               /*vertical arrangement*/
               /*align-items: stretch;*/
@@ -30,8 +30,8 @@
               /*flex-direction: row;*/
               /*flex-direction: row-reverse;*/
 
-              flex-direction: column;
-              flex-direction: column-reverse;
+              /*flex-direction: column;*/
+              /*flex-direction: column-reverse;*/
           } 
           .item1{
               /*flex:3;*/
@@ -40,32 +40,50 @@
           }
           .item2{
               /*flex:3;*/
-             /* flex:2; wahts is behind it*/
+             /* flex:2; whats is behind it*/
              /*order: 1;*/
           }
           .item3{
               /*flex:5;*/
               /*flex:1*/
              /* order: 2;*/
-          } 
-
-          
-              
           }
+          
+          /*if screen size is small than*/
+          @media(max-width: 720px){
+              .main{
+                  flex-direction: row;
+              }
+          .item1, .item2, .item3{
+              background-color: skyblue;
+              border: 2px solid red;
+          }
+          @media(max-width: 480px){
+              .main{
+                  flex-direction: column;
+                
+              }
+              .item1, .item2, .item3{
+              background-color: goldenrod;
+              border: 2px solid red;
+          }
+          }
+
+        
     </style>
 </head>
 <body>
     <div class="main">          
     <div class="item1">
-    <h1>Politics - 1</h1>
+    <h1>RRR - 1</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam omnis non doloremque temporibus et obcaecati, adipisci placeat dignissimos culpa odit iure labore illum inventore ex aliquam molestiae voluptatibus, in sequi libero eveniet modi voluptatum a rem. Sunt nulla unde veritatis omnis dolor deserunt consequuntur ipsum sequi explicabo quasi, voluptates laboriosam!</p>
 </div>
      <div class="item2">
-    <h1>Cricket - 2</h1>
+    <h1>KGF - 2</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam omnis non doloremque temporibus et obcaecati, adipisci placeat dignissimos culpa odit iure labore illum inventore ex aliquam molestiae voluptatibus, in sequi libero eveniet modi voluptatum a rem. Sunt nulla unde veritatis omnis dolor deserunt consequuntur ipsum sequi explicabo quasi, voluptates laboriosam!</p>
 </div>
     <div class="item3">
-    <h1>Entertainment - 3</h1>
+    <h1>MONEY - 3</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam omnis non doloremque temporibus et obcaecati, adipisci placeat dignissimos culpa odit iure labore illum inventore ex aliquam molestiae voluptatibus, in sequi libero eveniet modi voluptatum a rem. Sunt nulla unde veritatis omnis dolor deserunt consequuntur ipsum sequi explicabo quasi, voluptates laboriosam!</p>
     </div>
 </div> 
